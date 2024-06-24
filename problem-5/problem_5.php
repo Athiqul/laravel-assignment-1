@@ -7,12 +7,12 @@ function sumOfGivenInt(int $input)
     //Adding from last element
     $sum+=$input%10;
     //Removing last element
-    $input/=10;
+    $input=(int)$input/10;
   }
 
   return $sum;
 }
 
-echo sumOfGivenInt(10000);
+echo sumOfGivenInt(62343);
 //output 1
 ?>
